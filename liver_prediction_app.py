@@ -78,7 +78,10 @@ def main():
     st.success(diagnosis)
 
     st.sidebar.header('Home')
-    
+
+    vid=open("Healthy_liver_food.mp4",'rb')
+    video = vid.read()
+    st.video(video)
     
     
 if __name__=='__main__':
