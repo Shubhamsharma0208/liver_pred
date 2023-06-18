@@ -40,6 +40,7 @@ def main():
     
     #getting input from user
     Age= st.text_input('Enter your Age')
+    st.divider()
     Gender = st.radio('Gender',('Male','Female'))
     if Gender=="Male":
         Gender = 1
@@ -47,13 +48,21 @@ def main():
         Gender = 0
         
     Total_Bilirubin= st.text_input('Enter Total bilirubin level')
+    st.divider()
     Direct_Bilirubin= st.text_input('Enter Direct bilirubin level')
+    st.divider()
     Alkaline_Phosphotase= st.text_input('Enter Alkaline phosphotase level')
+    st.divider()
     Alamine_Aminotransferase= st.text_input('Enter alamine level')
+    st.divider()
     Aspartate_Aminotransferase= st.text_input('Enter aspartate aminotransferase level')
+    st.divider()
     Total_Protiens= st.text_input('Enter total protein value')
+    st.divider()
     Albumin = st.text_input('Enter albumin levels')
+    st.divider()
     Albumin_and_Globulin_Ratio= st.text_input('Enter albumin and globulin ratio value')
+    st.divider()
     
     # code for prediction 
     diagnosis = ''
