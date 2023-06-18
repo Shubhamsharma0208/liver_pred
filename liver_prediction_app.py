@@ -34,13 +34,13 @@ def main():
     st.title('DBDA Model For Liver Disease Prediction')
     
     #getting input from user
-       
     Age= st.text_input('Enter your Age')
     Gender = st.radio('Gender',('Male','Female'))
     if Gender=="Male":
         Gender = 1
     else:
         Gender = 0
+        
     Total_Bilirubin= st.text_input('Enter Total bilirubin level')
     Direct_Bilirubin= st.text_input('Enter Direct bilirubin level')
     Alkaline_Phosphotase= st.text_input('Enter Alkaline phosphotase level')
@@ -56,8 +56,10 @@ def main():
     # creating button for prediction
     if st.button('Test Results'):
         diagnosis = liver_prediction([Age,Gender,Total_Bilirubin,Direct_Bilirubin,Alkaline_Phosphotase,Alamine_Aminotransferase,Aspartate_Aminotransferase,Total_Protiens,Albumin,Albumin_and_Globulin_Ratio])
-    
+    with st.spinner('waiting..')
+    time.sleep(3)
     st.success(diagnosis)
+
     
     
     
