@@ -84,7 +84,7 @@ def main():
     st.sidebar.header("Main Menu")
     
 
-    col1, col2, col3 = st.columns(3)
+    col1 = st.columns(1)
 
     with col1:
        st.header("Make your liver healthy by eating some fruits")
