@@ -37,7 +37,7 @@ def liver_prediction(input):
 def main():
    
     #giving title
-    st.title('DBDA Model For Liver Disease Prediction')
+    st.title('Application For Liver Disease Prediction')
     
     img=Image.open("liver.jpg")
     st.image(img)
