@@ -36,7 +36,7 @@ def main():
     #getting input from user
        
     Age= st.text_input('Enter your Age')
-    Gender = st.radio('Male','Female')
+    Gender = st.radio('Gender',('Male','Female'))
     if Gender=="Male":
         Gender = 1
     else:
