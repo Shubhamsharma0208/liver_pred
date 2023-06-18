@@ -8,8 +8,7 @@ from PIL import Image
 
 
 
-
- with st.sidebar:
+with st.sidebar:
         selected = option_menu(
             menu_title = "Main Menu",options = ["Home","About","Contact"],
         )
@@ -20,6 +19,7 @@ from PIL import Image
        st.title=(f"you have selected {selected}")
     if selected == "Contact":
         st.title=(f"you have selected {selected}")
+ 
 #load saved model
 load_model=pickle.load(open('Trained_model.pkl','rb'))
 
