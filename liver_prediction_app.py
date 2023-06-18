@@ -2,6 +2,7 @@ import numpy as np
 import pickle
 import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
+from streamlit_option_menu import option_menu
 import time
 from PIL import Image
 #load saved model
@@ -76,14 +77,24 @@ def main():
         with st.spinner('waiting..'):
             time.sleep(3)
     st.success(diagnosis)
+    
+    with st.sidebar:
+        selected = option_menu(
+            menu.title = "Main Menu",options = ["Home","About","Contact"],
+        )
+   if selected == "Home":
+       st.title=(f"you have selected {selected})
+   if selected == "About":
+       st.title=(f"you have selected {selected})
+   if selected == "Contact":
+        st.title=(f"you have selected {selected})
 
-    st.sidebar.header('Home')
 
     vid=open("Healthy _liver_food.mov", 'rb')
     video = vid.read()
     st.video(video)
 
-
+   
     
     
 if __name__=='__main__':
