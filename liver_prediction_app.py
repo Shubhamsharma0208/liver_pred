@@ -48,7 +48,7 @@ def main():
         Gender = 0
         
     Total_Bilirubin= st.text_input('Enter Total bilirubin level') 
-        st.divider()
+    
     
     Direct_Bilirubin= st.text_input('Enter Direct bilirubin level')
   
