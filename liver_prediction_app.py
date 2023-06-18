@@ -81,11 +81,12 @@ def main():
             time.sleep(3)
     st.success(diagnosis)
 
-    vid=open("Healthy _liver_food.mov", 'rb')
+    st.sidebar.header("Main Menu")
+    vid=open("livervid.mp4", 'rb')
     video = vid.read()
     st.video(video)
 
-    st.sidebar.header("Main Menu")
+   
 
     
 if __name__=='__main__':
