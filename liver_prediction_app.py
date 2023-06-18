@@ -31,8 +31,8 @@ def liver_prediction(input):
 #streamlit function with name as main
 
 def main():
-    img=image.open('liver.jpg')
-    img.show()
+    img=image.open("liver.jpg")
+    st.image(img)
     #giving title
     st.title('DBDA Model For Liver Disease Prediction')
     
