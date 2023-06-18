@@ -82,11 +82,12 @@ def main():
         selected = option_menu(
             menu_title = "Main Menu",options = ["Home","About","Contact"],
         )
-   if selected == "Home":
+   
+    if selected == "Home":
        st.title=(f"you have selected {selected})
-   if selected == "About":
+    if selected == "About":
        st.title=(f"you have selected {selected})
-   if selected == "Contact":
+    if selected == "Contact":
         st.title=(f"you have selected {selected})
 
 
