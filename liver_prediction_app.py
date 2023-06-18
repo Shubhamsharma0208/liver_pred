@@ -84,11 +84,11 @@ def main():
         )
    
     if selected == "Home":
-       st.title=(f"you have selected {selected})
+       st.title=(f"you have selected {selected}")
     if selected == "About":
-       st.title=(f"you have selected {selected})
+       st.title=(f"you have selected {selected}")
     if selected == "Contact":
-        st.title=(f"you have selected {selected})
+        st.title=(f"you have selected {selected}")
 
 
     vid=open("Healthy _liver_food.mov", 'rb')
