@@ -79,7 +79,7 @@ def main():
 
     st.sidebar.header('Home')
 
-    vid=open("Healthy_liver_food",'rb')
+    vid=open("Healthy_liver_food.mov",'rb')
     video = vid.read()
     st.video(video)
     
