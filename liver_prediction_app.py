@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
-from streamlit-option-menu import option-menu
+from streamlit-option-menu import option_menu
 import time
 from PIL import Image
 #load saved model
