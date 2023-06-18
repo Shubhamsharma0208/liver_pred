@@ -65,6 +65,7 @@ def main():
             time.sleep(3)
     st.success(diagnosis)
 
+    st.sidebar.header('Home','About')
     
     
     
