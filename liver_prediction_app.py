@@ -3,6 +3,7 @@ import pickle
 import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
 import time
+from PIL import image
 #load saved model
 load_model=pickle.load(open('Trained_model.pkl','rb'))
 
