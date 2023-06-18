@@ -11,14 +11,14 @@ from PIL import Image
 
 with st.sidebar:
         selected = option_menu(
-            menu_title = "Main Menu",options = ["Home","About","Contact"],)
+            menu_title =(None,options = ["Home","About","Contact"],)
    
 if selected == "Home":
         st.title=(f"you have selected {selected}")
 if selected == "About":
         st.title=(f"you have selected {selected}")
 if selected == "Contact":
-        st.title=(f"you have selected {selected}")
+        st.title=(f"you have selected XXXXXXXX")
  
 #load saved model
 load_model=pickle.load(open('Trained_model.pkl','rb'))
