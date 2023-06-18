@@ -82,11 +82,15 @@ def main():
     st.success(diagnosis)
 
     st.sidebar.header("Main Menu")
-    vid=open("livervid.mp4", 'rb')
-    video = vid.read()
-    st.video(video)
+    
 
-   
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+       st.header("Make your liver healthy by eating some fruits")
+       vid=open("livervid.mp4", 'rb')
+       video = vid.read()
+       st.video(video)
 
     
 if __name__=='__main__':
