@@ -92,19 +92,6 @@ def main():
         with st.spinner('waiting..'):
             time.sleep(3)
     st.success(diagnosis)
-    
-    with st.sidebar:
-        selected = option_menu(
-            menu_title = "Main Menu",options = ["Home","About","Contact"],
-        )
-   
-    if selected == "Home":
-       st.title=(f"you have selected {selected}")
-    if selected == "About":
-       st.title=(f"you have selected {selected}")
-    if selected == "Contact":
-        st.title=(f"you have selected {selected}")
-
 
     vid=open("Healthy _liver_food.mov", 'rb')
     video = vid.read()
