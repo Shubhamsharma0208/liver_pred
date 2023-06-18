@@ -36,7 +36,12 @@ def main():
     #getting input from user
        
     Age= st.text_input('Enter your Age')
-    Gender= st.text_input('Enter Gender')
+    options =("male","female")
+    a= st.empty()
+    Gender= a.radio("Gender",options,0)
+    st.write(Gender)
+    Gender = a.radio("Gender",options,1)
+    st.write(Gender)
     Total_Bilirubin= st.text_input('Enter Total bilirubin level')
     Direct_Bilirubin= st.text_input('Enter Direct bilirubin level')
     Alkaline_Phosphotase= st.text_input('Enter Alkaline phosphotase level')
