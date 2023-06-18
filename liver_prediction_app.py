@@ -39,9 +39,9 @@ def main():
     options =("male","female")
     Gender = st.radio('Male','Female')
     if Gender=="Male":
-        Gender=st.text([1])
+        Gender = 1
     else:
-        Gender=st.test([0])
+        Gender = 0
     Total_Bilirubin= st.text_input('Enter Total bilirubin level')
     Direct_Bilirubin= st.text_input('Enter Direct bilirubin level')
     Alkaline_Phosphotase= st.text_input('Enter Alkaline phosphotase level')
