@@ -87,18 +87,7 @@ def main():
     st.video(video)
 
    
-    with st.sidebar:
-        selected = option_menu(
-            menu_title =None,
-            options = ["Home","About","Contact"],
-        )
-    if selected == "Home":
-            st.title=("Home")
-    if selected == "About":
-            st.title=("About")
-    if selected == "Contact":
-            st.title=("XXXXXXXX")
- 
+
     
 if __name__=='__main__':
     main()
