@@ -90,8 +90,9 @@ def main():
    
     with st.sidebar:
         selected = option_menu(
-            menu_title =None,options = ["Home","About","Contact"]
-   
+            menu_title =None,
+            options = ["Home","About","Contact"],
+        )
     if selected == "Home":
             st.title=(f"you have selected {selected}")
     if selected == "About":
