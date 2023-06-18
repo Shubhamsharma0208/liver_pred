@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
 import time
-from PIL import image
+from PIL import Image
 #load saved model
 load_model=pickle.load(open('Trained_model.pkl','rb'))
 
@@ -32,7 +32,7 @@ def liver_prediction(input):
 
 def main():
     img=image.open('liver.jpg')
-    st.image(img)
+    img.show()
     #giving title
     st.title('DBDA Model For Liver Disease Prediction')
     
