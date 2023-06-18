@@ -82,10 +82,10 @@ def main():
     st.success(diagnosis)
 
     st.sidebar.header("Main Menu")
-       st.header("Make your liver healthy by eating some fruits")
-       vid=open("livervid.mp4", 'rb')
-       video = vid.read()
-       st.video(video)
+    st.header("Make your liver healthy by eating some fruits")
+    vid=open("livervid.mp4", 'rb')
+    video = vid.read()
+    st.video(video)
 
     
 if __name__=='__main__':
