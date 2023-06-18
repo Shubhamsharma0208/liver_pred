@@ -1,7 +1,6 @@
 import numpy as np
 import pickle
 import streamlit as st
-import SessionState
 from sklearn.preprocessing import MinMaxScaler
 from streamlit_option_menu import option_menu
 import time
@@ -94,11 +93,11 @@ def main():
             options = ["Home","About","Contact"],
         )
     if selected == "Home":
-            st.title=(f"you have selected {selected}")
+            st.title=("Home")
     if selected == "About":
-            st.title=(f"you have selected {selected}")
+            st.title=("About")
     if selected == "Contact":
-            st.title=(f"you have selected XXXXXXXX")
+            st.title=("XXXXXXXX")
  
     
 if __name__=='__main__':
