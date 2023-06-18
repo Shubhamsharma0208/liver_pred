@@ -37,7 +37,7 @@ def main():
        
     Age= st.text_input('Enter your Age')
     options =("male","female")
-    Gender = st.selectbox()
+    Gender = st.selectbox(options)
     a= st.empty()
     Gender = a.radio("male",options,1)
     Gender = a.radio("female",options,0)
