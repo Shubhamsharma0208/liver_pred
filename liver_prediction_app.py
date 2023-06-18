@@ -1,7 +1,6 @@
 import numpy as np
 import pickle
 import streamlit as st
-from streamlit import session_state as state
 from sklearn.preprocessing import MinMaxScaler
 from streamlit_option_menu import option_menu
 import time
