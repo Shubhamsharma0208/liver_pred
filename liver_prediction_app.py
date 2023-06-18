@@ -85,7 +85,7 @@ def main():
     video = vid.read()
     st.video(video)
 
-st.sidebar("Main Menu")
+    st.sidebar.header("Main Menu")
 
     
 if __name__=='__main__':
