@@ -38,7 +38,8 @@ def main():
    
     #giving title
     st.title('Application For Liver Disease Prediction')
-    
+    st.text(""" 
+            # Machine Learning app)
     img=Image.open("liver.jpg")
     st.image(img)
     
@@ -88,7 +89,7 @@ def main():
     st.header("Make your liver healthy by eating some fruits")
     vid=open("livervid.mp4", 'rb')
     video = vid.read()
-    st.video(video)
+    st.sidebar.video(video)
 
     
 if __name__=='__main__':
