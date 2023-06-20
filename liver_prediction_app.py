@@ -53,24 +53,24 @@ def main():
         Gender = 1
     else:
         Gender = 0
-        
+    st.write("___")    
     Total_Bilirubin= st.text_input('Enter Total bilirubin level') 
-    
+    st.write("___")
     
     Direct_Bilirubin= st.text_input('Enter Direct bilirubin level')
-  
+    st.write("___")
     Alkaline_Phosphotase= st.text_input('Enter Alkaline phosphotase level')
-  
+    st.write("___")
     Alamine_Aminotransferase= st.text_input('Enter alamine level')
-
+    st.write("___")
     Aspartate_Aminotransferase= st.text_input('Enter aspartate aminotransferase level')
-    
+    st.write("___")
     Total_Protiens= st.text_input('Enter total protein value')
-   
+    st.write("___")
     Albumin = st.text_input('Enter albumin levels')
-  
+    st.write("___")
     Albumin_and_Globulin_Ratio= st.text_input('Enter albumin and globulin ratio value')
-   
+    st.write("___")
     
     # code for prediction 
     diagnosis = ''
