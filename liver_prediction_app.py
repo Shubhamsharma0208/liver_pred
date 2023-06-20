@@ -39,7 +39,7 @@ def main():
     #giving title
     st.title('Application For Liver Disease Prediction')
     st.text(""" 
-            # Machine Learning app)
+            # Machine Learning app""")
     img=Image.open("liver.jpg")
     st.image(img)
     
