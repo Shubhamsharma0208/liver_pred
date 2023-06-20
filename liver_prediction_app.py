@@ -39,14 +39,12 @@ def main():
     #giving title
     st.title('Application For Liver Disease Prediction')
     st.text(""" 
-            # Machine Learning app""")
+             Machine Learning app""")
     img=Image.open("liver.jpg")
     st.image(img)
     
     #getting input from user
     Age= st.text_input('Enter your Age')
-    
-    
     
     Gender = st.radio('Gender',('Male','Female'))
     if Gender=="Male":
