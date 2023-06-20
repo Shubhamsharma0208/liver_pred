@@ -86,7 +86,7 @@ def main():
     st.sidebar.button('Home')
     st.sidebar.button('About')
     st.sidebar.button('Contact')
-    st.header("Make your liver healthy by eating some fruits")
+    st.sidebar.header("Make your liver healthy by eating some fruits")
     vid=open("livervid.mp4", 'rb')
     video = vid.read()
     st.sidebar.video(video)
